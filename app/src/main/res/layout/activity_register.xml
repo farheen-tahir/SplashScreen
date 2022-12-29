@@ -4,10 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
     android:orientation="vertical"
-    tools:context=".MainActivity">
-
+    android:background="@color/white"
+    tools:context=".Register">
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="98dp"
@@ -27,7 +26,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
         android:fontFamily="sans-serif"
-        android:text="LOGIN"
+        android:text="REGISTER"
         android:textAlignment="center"
         android:textSize="34sp" />
 
@@ -45,6 +44,16 @@
         tools:layout_editor_absoluteX="114dp" />
 
     <EditText
+        android:id="@+id/editTextTextEmailAddress2"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Enter email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
         android:id="@+id/editTextTextPassword"
         android:layout_width="250dp"
         android:layout_height="48dp"
@@ -56,20 +65,10 @@
         app:layout_constraintBottom_toBottomOf="@+id/textView2"
         tools:layout_editor_absoluteX="100dp" />
 
-    <TextView
-        android:id="@+id/forget"
-        android:layout_width="250dp"
-        android:layout_height="48dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:onClick="move"
-        android:text="Forgot Password?"
-        android:textAlignment="center"
-        tools:layout_editor_absoluteX="156dp"
-        tools:layout_editor_absoluteY="356dp" />
+
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/registerBtn"
         android:layout_width="250dp"
         android:layout_height="48dp"
         android:layout_gravity="center"
@@ -82,17 +81,18 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="@color/white"
         tools:layout_editor_absoluteX="156dp"
-        tools:layout_editor_absoluteY="390dp" />
+        tools:layout_editor_absoluteY="390dp"
+
+        />
 
     <TextView
-        android:id="@+id/register"
+        android:id="@+id/loginAcc"
         android:layout_width="109dp"
         android:layout_height="48dp"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
         android:onClick="move"
-        android:text="Don't have an account?"
+        android:text="Already have an account?"
         android:textAlignment="center" />
-
 
 </LinearLayout>
